@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/uurLoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Uurloon"
+            android:inputType="numberDecimal"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/aantalUren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Aantal uren"
+            android:inputType="numberDecimal"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/weekOverUren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Door de week overuren (150%)"
+            android:inputType="numberDecimal"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/zaterdagUren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Zaterdag uren (150%)"
+            android:inputType="numberDecimal"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/zaterdagOverUren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Zaterdag overuren (200%)"
+            android:inputType="numberDecimal"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/zondagUren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Zondag uren (300%)"
+            android:inputType="numberDecimal"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/zwampToelagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Zwamp toelagen (0.075%)"
+            android:inputType="numberDecimal"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnResultaat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultaat"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/normaleLoon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/weekOverUren1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/zaterdagUren1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/zaterdagOverUren1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/zondagUren1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/brutoSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/zwampToelagen1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subTotaal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/New"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Nieuw Berekening" />
+    </LinearLayout>
+</LinearLayout>
